@@ -1,0 +1,499 @@
+$bolder: #787e85;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+
+  &_left-content {
+    display: flex;
+  }
+  .header-content {
+    background-color: #272727;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #33363e;
+    z-index: 20;
+  }
+  ul {
+    margin-left: 20px; //input თან დაშორება
+    display: flex;
+    width: 513px;
+    justify-content: space-between;
+    a {
+      font-weight: bold;
+      color: #919aa3;
+    }
+    #active {
+      color: #fff;
+    }
+  }
+  input {
+    width: 230px;
+    height: 20px;
+    color: #787e85;
+    font-size: 16px;
+    letter-spacing: -0.67px;
+    background-color: #272727;
+    outline: none;
+    border: none;
+    border-right: 1px solid #62676e;
+  }
+  input::placeholder {
+    color: #787e85;
+  }
+  .icon_background {
+    background-color: #62676e;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 20px;
+    margin: 0 10px;
+    i {
+      color: white;
+    }
+  }
+  &_right-content {
+    position: relative;
+    display: flex;
+    width: 181px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    color: #62676e;
+    margin-right: 10px;
+    div {
+      display: flex;
+      width: 100px;
+      justify-content: space-between;
+      i {
+        cursor: pointer;
+      }
+      p {
+        font-weight: bold;
+      }
+    }
+    div::before {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      top: 0;
+      height: 100%;
+      width: 1px;
+      background-color: #62676e;
+      left: -10px;
+    }
+    div::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      top: 0;
+      height: 100%;
+      width: 1px;
+      background-color: #62676e;
+      right: 50px;
+    }
+  }
+}
+
+// main content
+.main_sections {
+  display: flex;
+
+  .first-section {
+    background-color: #2a2c32;
+    width: 1300px;
+
+    //height: 2000px;
+    flex: 2;
+    padding-left: 130px;
+    padding-right: 25px;
+    padding-bottom: 150px;
+    box-shadow: 15px 0 5px -5px#1b1b1d;
+    z-index: 2;
+  }
+  &-navItems {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #33363e;
+
+    // nav items of main section
+    ul {
+      display: flex;
+      padding: 25px;
+      width: 500px;
+      justify-content: space-between;
+
+      a {
+        color: $bolder;
+        font-size: 16px;
+        font-weight: bold;
+        color: #919aa3;
+      }
+      #active {
+        color: #fff;
+        position: relative;
+      }
+      #active::after {
+        content: "";
+        position: absolute;
+        width: 140px;
+        height: 2px;
+        display: block;
+        background-color: red;
+        top: 44px;
+        left: -24px;
+      }
+    }
+
+    .end-text {
+      display: flex;
+      height: 100%;
+      align-items: center;
+
+      .timeline-button {
+        padding: 10px;
+        font-size: 12px;
+        background-color: #f40034;
+        width: 100px;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 4px;
+      }
+      .list-button {
+        padding: 10px;
+        font-size: 12px;
+        border: 1px solid #3a3d43;
+        width: 100px;
+        color: #fff;
+        cursor: pointer;
+        outline: none;
+        border-radius: 4px;
+        background-color: #272626;
+      }
+    }
+  }
+  .date {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #33363e;
+    .dateResolved {
+      display: flex;
+      width: 180px;
+      height: 36px;
+      border: 1px solid #3a3d43;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 4px;
+      p {
+        color: #fff;
+        font-size: 14px;
+      }
+      i {
+        color: $bolder;
+        cursor: pointer;
+      }
+    }
+    .calendar {
+      width: 270px;
+      height: 36px;
+      border-radius: 4px;
+      border: 1px solid #3a3d43;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      p {
+        color: #fff;
+        font-size: 14px;
+      }
+      i {
+        color: $bolder;
+        cursor: pointer;
+      }
+    }
+  }
+  //  nav items of main section    end
+  // utility
+  .won {
+    font-size: 16px;
+    color: #03bb4f !important;
+    font-weight: bold;
+  }
+  .fribet {
+    background-color: #ffd206 !important;
+    width: 57px;
+    text-align: center;
+    color: #1e2024 !important;
+    font-weight: bold !important;
+  }
+
+  //betting-Content      left-side
+
+  .betting_content {
+    height: 60px;
+    padding-left: 20px; //betingi gaq shemoweuli 20 px
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid #33363e;
+
+    label {
+      font-size: 10px;
+      color: #919aa3;
+    }
+    .first-items {
+      display: flex;
+      width: 400px;
+      height: 100%;
+      justify-content: space-between;
+      align-items: center;
+
+      .first_icon_and-text {
+        display: flex;
+        width: 90px;
+        justify-content: space-between;
+        :last-child {
+          position: absolute;
+          left: 80px;
+        }
+      }
+      i {
+        color: #ffd206;
+      }
+    }
+    p {
+      color: #fff;
+    }
+    .betting_secondItems {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 13px;
+    }
+  }
+
+  .id_and_date {
+    display: flex;
+    flex-direction: column;
+  }
+  .tickedId {
+    height: 16px;
+    width: 56px;
+    background-color: #dfe3e5;
+
+    p {
+      font-size: 14px;
+      color: #232529;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+  .id_top_label {
+    font-size: 10px;
+    color: #919aa3;
+
+    margin-bottom: 3px;
+  }
+  .betting_thirdItems {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin-bottom: 13px;
+    position: relative;
+    .txt {
+      font-size: 10px;
+      color: #919aa3;
+      font-weight: bold;
+    }
+    .cash {
+      font-size: 16px;
+      color: #fff;
+      span {
+        color: #919aa3;
+        font-size: 10px;
+        vertical-align: top;
+      }
+    }
+    div {
+      width: 100px;
+      display: flex;
+    }
+  }
+  .betting_middle-items {
+    //shua itemebi formula   stake
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    position: absolute;
+    right: 300px;
+    .last-child {
+      display: flex;
+      margin-top: 8px;
+      height: 100%;
+      justify-content: center;
+      width: 100px;
+      flex-direction: column;
+    }
+    :first-child {
+      p {
+        color: #919aa3;
+        font-weight: bold;
+      }
+    }
+    p {
+      label {
+        vertical-align: top;
+      }
+    }
+  }
+  .betting_last-icons {
+    display: flex;
+    width: 170px;
+    height: 100%;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    right: 5px;
+    .first {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 44px;
+      height: 40px;
+      background-color: #0376bb;
+      border-radius: 4px;
+      :hover {
+        cursor: pointer;
+      }
+      i {
+        color: #fff;
+      }
+    }
+    .second {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 113px;
+      height: 40px;
+      border-radius: 4px;
+      background-color: #03bb4f;
+      color: #fff;
+      font-weight: bold;
+      :hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .winner {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin-bottom: 10px;
+    justify-content: center;
+    margin-left: 50px;
+    p {
+      label {
+        vertical-align: top;
+      }
+    }
+  }
+  .lost {
+    margin-top: 10px;
+    width: 15px;
+    height: 2px;
+    background-color: red;
+  }
+  .display_more {
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10px;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    height: 36px;
+    border-radius: 4px;
+    background-color: #33363e;
+    cursor: pointer;
+    p {
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+}
+.gift {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.missing-item {
+  width: 224px !important;
+}
+
+// right section of betting and football teams
+.main_sections-second {
+  background-color: #272727;
+  flex: 1;
+  .content {
+    font-size: 18px;
+    color: #fff;
+    padding-left: 60px;
+    padding-right: 100px;
+    .title {
+      display: flex;
+      height: 90px;
+      border-bottom: 1px solid #33363e;
+      align-items: center;
+    }
+
+    .soccer {
+      display: flex;
+      width: 90px;
+      height: 35px;
+      width: 100%;
+      border-bottom: 1px solid #33363e;
+      align-items: center;
+      p {
+        color: #919aa3;
+        font-size: 18px;
+        margin-left: 15px;
+      }
+      i {
+        color: $bolder;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .main_sections-second {
+  }
+}
