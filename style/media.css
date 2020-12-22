@@ -71,4 +71,7 @@
   .livescore {
     display: none !important;
   }
+  .winner {
+    right: 50px;
+  }
 }
