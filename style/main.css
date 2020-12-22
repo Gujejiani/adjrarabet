@@ -252,18 +252,6 @@ body {
   color: #787e85;
   cursor: pointer;
 }
-.main_sections .won {
-  font-size: 16px;
-  color: #03bb4f !important;
-  font-weight: bold;
-}
-.main_sections .fribet {
-  background-color: #ffd206 !important;
-  width: 57px;
-  text-align: center;
-  color: #1e2024 !important;
-  font-weight: bold !important;
-}
 .main_sections .betting_content {
   height: 60px;
   padding-left: 20px;
@@ -361,6 +349,15 @@ body {
   justify-content: center;
   width: 100px;
   flex-direction: column;
+}
+.main_sections .betting_middle-items .fribet {
+  background-color: #ffd206;
+  width: 57px;
+  text-align: center;
+  color: #1e2024;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  border-radius: 2px;
 }
 .main_sections .betting_middle-items :first-child p {
   color: #919aa3;
@@ -538,13 +535,19 @@ body {
   left: 50%;
   left: -70px;
   transform: translateX(-50%);
-  text-align: right !important;
+  text-align: right;
 }
 .main_sections-second .content .secondTeamName {
   position: absolute;
   left: 50%;
   left: 220px;
   transform: translateX(-50%);
+}
+
+.won {
+  font-size: 16px;
+  color: #03bb4f !important;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1600px) {
-  .betting_middle-items {
-    right: 200px !important;
+  .main_sections .betting_middle-items {
+    right: 200px;
   }
   .winner {
     position: relative;
@@ -22,8 +22,8 @@
   .tickedId {
     display: none;
   }
-  .livescore {
-    display: flex !important;
+  .main_sections .date .livescore {
+    display: flex;
   }
 }
 
@@ -34,8 +34,8 @@
   #betting_first-items {
     width: 300px;
   }
-  .input {
-    width: 10px !important;
+  .header .input {
+    width: 10px;
   }
   .main_sections .first-section {
     padding-right: 15px;
@@ -46,12 +46,12 @@
   #cashout {
     display: none;
   }
-  .betting_last-icons {
-    width: 50px !important;
+  .main_sections .betting_last-icons {
+    width: 50px;
   }
-  .second {
-    background-color: transparent !important;
-    color: #03bb4f !important;
+  .main_sections .betting_last-icons .second {
+    background-color: transparent;
+    color: #03bb4f;
   }
   #betting_last-firstIcon {
     background-color: transparent;
@@ -60,16 +60,16 @@
     color: #0376bb;
   }
 
-  .betting_middle-items {
-    right: 90px !important;
+  .main_sections .betting_middle-items {
+    right: 90px;
   }
   .header-content ul {
     width: 414px;
   }
 }
 @media only screen and (max-width: 768px) {
-  .livescore {
-    display: none !important;
+  .main_sections .date .livescore {
+    display: none;
   }
   .winner {
     right: 50px;
