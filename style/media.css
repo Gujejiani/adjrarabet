@@ -1,0 +1,74 @@
+@media only screen and (max-width: 1600px) {
+  .betting_middle-items {
+    right: 200px !important;
+  }
+  .winner {
+    position: relative;
+    right: 30px;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .main_sections-second {
+    display: none;
+  }
+  .main_sections .first-section {
+    padding-right: 130px;
+  }
+
+  .id_top_label {
+    margin-top: 20px;
+  }
+  .tickedId {
+    display: none;
+  }
+  .livescore {
+    display: flex !important;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .main_sections .first-section {
+    padding-left: 10px;
+  }
+  #betting_first-items {
+    width: 300px;
+  }
+  .input {
+    width: 10px !important;
+  }
+  .main_sections .first-section {
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 855px) {
+  #cashout {
+    display: none;
+  }
+  .betting_last-icons {
+    width: 50px !important;
+  }
+  .second {
+    background-color: transparent !important;
+    color: #03bb4f !important;
+  }
+  #betting_last-firstIcon {
+    background-color: transparent;
+  }
+  #betting_last-firstIcon i {
+    color: #0376bb;
+  }
+
+  .betting_middle-items {
+    right: 90px !important;
+  }
+  .header-content ul {
+    width: 414px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .livescore {
+    display: none !important;
+  }
+}

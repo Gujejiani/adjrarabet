@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/media.css">
     <title>Adjarabet</title>
 </head>
 <body>
@@ -14,9 +15,9 @@
         <div class="header-content">
            <div class="header_left-content" >
                <div>
-                   <!-- <img src="" alt=""> -->
+                   <!-- <img src="" alt="won"> -->
                  <label for="search" class="icon_background" > <i class="fas fa-search"></i></label> 
-                   <input type="text" name="search" id="search" placeholder="Search for Team or League...">
+                   <input class="input" type="text" name="search" id="search" placeholder="Search for Team or League...">
                 </div>
                    <nav>
                        <ul>
@@ -32,11 +33,11 @@
             <div class="header_right-content">
                   <div>
                     <p>10:20:30</p>
-                    <i class="fas fa-caret-down"></i>
+                    <img src="./images/Interface Icons/arrow down.svg" alt="arrow">
                 </div> 
-                    <i class="fas fa-cog"></i>
+                <img class="setting" src="./images/Interface Icons/Settings.svg" alt="settings">
 
-                    <!-- <img src="" alt=""> -->
+                    <!-- <img src="" alt="won"> -->
                
                
            </div> 
@@ -58,13 +59,19 @@
                </div>
                <div class="date">
                     <div class="dateResolved" >
+                      <img src="./images/Interface Icons/Sort.svg" alt="">
                         <p>Resolved Date</p>
-                        <i class="fas fa-caret-down"></i>
+                        <img src="./images/Interface Icons/arrow down.svg" alt="arrow">
                     </div>
+                
                     <div class="calendar" >
-                        <i class="fas fa-calendar-alt"></i>
-                     <p>   9 Jan 2018 - 10Feb 2018</p>
-                        <i class="fas fa-caret-down"></i>
+                      <div class="livescore" >
+                    <div>   <span>7</span><span>5</span></div> 
+                        <p> My Livescore </p>
+                      </div>
+                       <img src="./images/Interface Icons/Calendar.svg" alt="calendar">
+                     <p>   9 Jan 2018 - 10 Feb 2018</p>
+                        <img src="./images/Interface Icons/arrow down.svg" alt="arrow">
                     </div>
                </div>
 
@@ -72,9 +79,9 @@
 
             <!-- betting utility   1  -->
               <div class="betting_content" >
-                       <div class="first-items">
+                       <div id="betting_first-items" class="first-items">
                          <div class="first_icon_and-text" >
-                             <i class="far fa-circle"></i>
+                            <img src="./images/Interface Icons/Ongoing.svg" alt="onGoing">
                               <p>ACTIVE</p>
                           </div>
                        <div class="betting_secondItems" >
@@ -100,13 +107,13 @@
                        </div>
                     </div>
                  <div class="betting_last-icons" >
-                    <div class="first" >
+                    <div id="betting_last-firstIcon" class="first" >
                         <i class="fas fa-edit"></i>
                      
                     </div>
                     <div class="second" >
                         <i class="far fa-arrow-alt-circle-down"></i> 
-                        <p>CASOHOUT</p> 
+                        <p id="cashout"  >CASHOUT</p> 
                   
                  </div>
               </div>
@@ -116,9 +123,9 @@
 
             <!-- betting utility   2  -->
               <div class="betting_content" >
-                       <div class="first-items">
+                       <div id="betting_first-items" class="first-items">
                          <div class="first_icon_and-text" >
-                             <i class="far fa-circle"></i>
+                            <img src="./images/Interface Icons/Ongoing.svg" alt="onGoing">
                               <p>ACTIVE</p>
                           </div>
                        <div class="betting_secondItems" >
@@ -151,12 +158,12 @@
                        </div>
                     </div>
                  <div class="betting_last-icons" >
-                    <div class="first" >
+                    <div id="betting_last-firstIcon" class="first" >
                         <i class="fas fa-edit"></i>
                     </div>
                     <div class="second" >
                         <i class="far fa-arrow-alt-circle-down"></i> 
-                        <p>CASOHOUT</p> 
+                        <p  id="cashout" >CASHOUT</p> 
                   
                  </div>
               </div>
@@ -165,7 +172,7 @@
                   <!-- betting utility  end   -->
             <!-- betting utility   3  -->
               <div class="betting_content" >
-                       <div class="first-items">
+                       <div id="betting_first-items" class="first-items">
                          <div class="first_icon_and-text" >
                              <label  class="lost"></label>
                               <p>LOST</p>
@@ -200,9 +207,10 @@
                   <!-- betting utility  end   -->
             <!-- betting utility   4  -->
               <div class="betting_content" >
-                       <div class="first-items">
+                       <div id="betting_first-items" class="first-items">
                          <div class="first_icon_and-text" >
-                             <label  class="lost"></label>
+                             <!-- <label  class="lost"></label> -->
+                             <img src="./images/Interface Icons/Half Loose.svg" alt="lose">
                               <p>HALF LOST</p>
                           </div>
                        <div class="betting_secondItems" >
@@ -235,9 +243,9 @@
                   <!-- betting utility  end   -->
             <!-- betting utility   5  -->
               <div class="betting_content" >
-                       <div class="first-items">
+                       <div id="betting_first-items" class="first-items">
                          <div class="first_icon_and-text" >
-                             <label  class="lost"></label>
+                            <img src="./images/Interface Icons/Half Win.svg" alt="win">
                               <p>HALF WON</p>
                           </div>
                        <div class="betting_secondItems" >
@@ -270,9 +278,9 @@
                   <!-- betting utility  end   -->
             <!-- betting utility   6  -->
               <div class="betting_content" >
-                       <div class="first-items">
+                       <div id="betting_first-items" class="first-items">
                          <div class="first_icon_and-text" >
-                            <i class="fas fa-check won"></i>
+                          <img src="./images/Interface Icons/Won.svg" alt="won">
                               <p>VOIDED</p>
                           </div>
                        <div class="betting_secondItems" >
@@ -305,7 +313,7 @@
                   <!-- betting utility  end   -->
             <!-- betting utility   7  -->
               <div class="betting_content" >
-                       <div class="first-items">
+                       <div id="betting_first-items" class="first-items">
                          <div class="first_icon_and-text" >
                         <label class="lost"></label>
                               <p>LOST</p>
@@ -319,7 +327,7 @@
                        <div class="betting_thirdItems" >
                          <p class="txt" >CASHED OUT</p> 
                          <p class="cash won">  10.00  <span class="gel" >GEL</span> </p> 
-                         <i class="fas fa-skull gift"  ></i>
+                        <img class="gift" src="./images/Interface Icons/Bonus.svg" alt="bonus">
                        </div>
                     </div>
 
@@ -352,6 +360,10 @@
                                <p>#425612  </p>
                             </div>
                        </div>
+                       <div class="betting_thirdItems hide" >
+                        <p class="txt" >WON</p> 
+                        <p class="cash won">20.30  <span class="gel" >GEL</span> </p> 
+                      </div>
                       
                     </div>
 
@@ -373,9 +385,9 @@
                   <!-- betting utility  end   -->
                    <!-- betting utility   9  -->
               <div class="betting_content" >
-                <div class="first-items">
+                <div id="betting_first-items" class="first-items">
                   <div class="first_icon_and-text" >
-                    <i class="fas fa-check won"></i>
+                  <img src="./images/Interface Icons/Won.svg" alt="won">
                        <p>WON</p>
                    </div>
                 <div class="betting_secondItems" >
@@ -409,9 +421,9 @@
 
              <!-- betting utility   10  -->
              <div class="betting_content" >
-                <div class="first-items">
+                <div id="betting_first-items" class="first-items">
                   <div class="first_icon_and-text" >
-                     <i class="fas fa-check won"></i>
+                   <img src="./images/Interface Icons/Won.svg" alt="won">
                        <p>WON</p>
                    </div>
                 <div class="betting_secondItems" >
@@ -444,9 +456,9 @@
            <!-- betting utility  end   -->
              <!-- betting utility   11  -->
              <div class="betting_content" >
-                <div class="first-items">
+                <div id="betting_first-items" class="first-items">
                   <div class="first_icon_and-text" >
-                     <i class="fas fa-check won"></i>
+                   <img src="./images/Interface Icons/Won.svg" alt="won">
                        <p>WON</p>
                    </div>
                 <div class="betting_secondItems" >
@@ -481,9 +493,9 @@
 
              <!-- betting utility   12  -->
              <div class="betting_content" >
-                <div class="first-items">
+                <div id="betting_first-items" class="first-items">
                   <div class="first_icon_and-text" >
-                     <i class="fas fa-check won"></i>
+                   <img src="./images/Interface Icons/Won.svg" alt="won">
                        <p>WON</p>
                    </div>
                 <div class="betting_secondItems" >
@@ -523,7 +535,7 @@
                     <h1>MY LIVESCORE</h1>
                 </div>
                 <div class="soccer" >
-                    <i class="fas fa-futbol"></i> <p>Soccer</p>
+                  <img src="./images/Sports/L.svg" alt="">
                 </div>
                 
                 <!-- right logo and result utility 1 -->
@@ -531,13 +543,13 @@
                  
                   <div class="logo-and-score " >
                     <p class="firstTeamName " >Nijsdsde</p>
-                    <img src="./images/real-madrid.svg" width="36px" height="36px" class="Teamlogo" alt="madrid">
+                    <img src="./images/Teams/RealMadrid.svg" width="36px" height="36px" class="Teamlogo" alt="madrid">
                     <div class="result_items" >
                       <span>FT</span>
                       <p>1 - 1</p>
                       <label >5 DEC 15:38 </label>
                     </div>
-                    <img src="./images/manchester-united.svg" class="Teamlogo" width="36px" height="36px" alt="manchester-united">
+                    <img src="./images/Teams/Manchester.svg" class="Teamlogo" width="36px" height="36px" alt="manchester-united">
                     <p class="secondTeamName " >Veenendaal </p>
                   </div>
                 
@@ -549,13 +561,13 @@
                  
                   <div class="logo-and-score " >
                     <p class="firstTeamName " >Aarlen</p>
-                    <img src="./images/real-madrid.svg" width="36px" height="36px" class="Teamlogo" alt="madrid">
+                    <img src="./images/Teams/Milan.svg" width="36px" height="36px" class="Teamlogo" alt="madrid">
                     <div class="result_items" >
                       <span>FT</span>
                       <p>1 - 1</p>
                       <label >5 DEC 15:38 </label>
                     </div>
-                    <img src="./images/manchester-united.svg" class="Teamlogo" width="36px" height="36px" alt="manchester-united">
+                    <img src="./images/Teams/BVB.svg" class="Teamlogo" width="36px" height="36px" alt="manchester-united">
                     <p class="secondTeamName " >Beersel </p>
                   </div>
                 
@@ -566,13 +578,13 @@
                  
                   <div class="logo-and-score " >
                     <p class="firstTeamName " >Bergen</p>
-                    <img src="./images/real-madrid.svg" width="36px" height="36px" class="Teamlogo" alt="madrid">
+                    <img src="./images/Teams/TeamOne.svg" width="36px" height="36px" class="Teamlogo" alt="madrid">
                     <div class="result_items" >
                       <span>FT</span>
                       <p>1 - 1</p>
                       <label >5 DEC 15:38 </label>
                     </div>
-                    <img src="./images/manchester-united.svg" class="Teamlogo" width="36px" height="36px" alt="manchester-united">
+                    <img src="./images/Teams/Bayern.svg" class="Teamlogo" width="36px" height="36px" alt="manchester-united">
                     <p class="secondTeamName " >Aarschot </p>
                   </div>
                 
@@ -583,33 +595,33 @@
                  
                   <div class="logo-and-score " >
                     <p class="firstTeamName " >Kapellen</p>
-                    <img src="./images/real-madrid.svg" width="36px" height="36px" class="Teamlogo" alt="madrid">
+                    <img src="./images/Teams/Bayern.svg" width="36px" height="36px" class="Teamlogo" alt="madrid">
                     <div class="result_items" >
                       <span>FT</span>
                       <p>1 - 1</p>
                       <label >5 DEC 15:38 </label>
                     </div>
-                    <img src="./images/manchester-united.svg" class="Teamlogo" width="36px" height="36px" alt="manchester-united">
+                    <img src="./images/Teams/Chelsea.svg"  class="Teamlogo" width="36px" height="36px" alt="manchester-united">
                     <p class="secondTeamName " >Grimbergen </p>
                   </div>
                 
                 </div>
                  <!-- right logo and result utility end -->
                  <div class="soccer" >
-                  <i class="fas fa-basketball-ball"></i> <p>BasketBall</p>
+                  <img src="./images/Sports/J.svg" alt="basletball">
               </div>
               <!-- right logo and result utility 1 -->
               <div class="teams-flex" >
                  
                 <div class="logo-and-score " >
                   <p class="firstTeamName " >Nijsdsde</p>
-                  <img src="./images/real-madrid.svg" width="36px" height="36px" class="Teamlogo" alt="madrid">
+                  <img src="./images/Teams/RealMadrid.svg" width="36px" height="36px" class="Teamlogo" alt="madrid">
                   <div class="result_items" >
                     <span>FT</span>
                     <p>1 - 1</p>
                     <label >5 DEC 15:38 </label>
                   </div>
-                  <img src="./images/manchester-united.svg" class="Teamlogo" width="36px" height="36px" alt="manchester-united">
+                  <img src="./images/Teams/Manchester.svg" class="Teamlogo" width="36px" height="36px" alt="manchester-united">
                   <p class="secondTeamName " >Veenendaal </p>
                 </div>
               
@@ -621,13 +633,13 @@
                
                 <div class="logo-and-score " >
                   <p class="firstTeamName " >Aarlen</p>
-                  <img src="./images/real-madrid.svg" width="36px" height="36px" class="Teamlogo" alt="madrid">
+                  <img src="./images/Teams/Milan.svg" width="36px" height="36px" class="Teamlogo" alt="madrid">
                   <div class="result_items" >
                     <span>FT</span>
                     <p>1 - 1</p>
                     <label >5 DEC 15:38 </label>
                   </div>
-                  <img src="./images/manchester-united.svg" class="Teamlogo" width="36px" height="36px" alt="manchester-united">
+                  <img src="./images/Teams/BVB.svg" class="Teamlogo" width="36px" height="36px" alt="manchester-united">
                   <p class="secondTeamName " >Beersel </p>
                 </div>
               
@@ -638,13 +650,13 @@
                
                 <div class="logo-and-score " >
                   <p class="firstTeamName " >Bergen</p>
-                  <img src="./images/real-madrid.svg" width="36px" height="36px" class="Teamlogo" alt="madrid">
+                  <img src="./images/Teams/TeamOne.svg" width="36px" height="36px" class="Teamlogo" alt="madrid">
                   <div class="result_items" >
                     <span>FT</span>
                     <p>1 - 1</p>
                     <label >5 DEC 15:38 </label>
                   </div>
-                  <img src="./images/manchester-united.svg" class="Teamlogo" width="36px" height="36px" alt="manchester-united">
+                  <img src="./images/Teams/Bayern.svg" class="Teamlogo" width="36px" height="36px" alt="manchester-united">
                   <p class="secondTeamName " >Aarschot </p>
                 </div>
               
@@ -655,13 +667,13 @@
                
                 <div class="logo-and-score " >
                   <p class="firstTeamName " >Kapellen</p>
-                  <img src="./images/real-madrid.svg" width="36px" height="36px" class="Teamlogo" alt="madrid">
+                  <img src="./images/Teams/Bayern.svg" width="36px" height="36px" class="Teamlogo" alt="madrid">
                   <div class="result_items" >
                     <span>FT</span>
                     <p>1 - 1</p>
                     <label >5 DEC 15:38 </label>
                   </div>
-                  <img src="./images/manchester-united.svg" class="Teamlogo" width="36px" height="36px" alt="manchester-united">
+                  <img src="./images/Teams/Chelsea.svg"  class="Teamlogo" width="36px" height="36px" alt="manchester-united">
                   <p class="secondTeamName " >Grimbergen </p>
                 </div>
               

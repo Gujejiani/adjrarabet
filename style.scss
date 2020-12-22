@@ -40,6 +40,7 @@ body {
     display: flex;
     width: 513px;
     justify-content: space-between;
+
     a {
       font-weight: bold;
       color: #919aa3;
@@ -48,7 +49,7 @@ body {
       color: #fff;
     }
   }
-  input {
+  .input {
     width: 230px;
     height: 20px;
     color: #787e85;
@@ -82,13 +83,17 @@ body {
     justify-content: space-around;
     color: #62676e;
     margin-right: 10px;
+    img {
+      cursor: pointer;
+    }
+    .setting {
+      margin-right: -5px;
+    }
     div {
       display: flex;
       width: 100px;
       justify-content: space-between;
-      i {
-        cursor: pointer;
-      }
+
       p {
         font-weight: bold;
       }
@@ -122,20 +127,22 @@ body {
 
   .first-section {
     background-color: #2a2c32;
-    width: 1300px;
+    //  max-width: 1300px;
 
     //height: 2000px;
     flex: 2;
     padding-left: 130px;
     padding-right: 25px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
     box-shadow: 15px 0 5px -5px#1b1b1d;
     z-index: 2;
+    position: relative;
   }
   &-navItems {
     width: 100%;
     display: flex;
     justify-content: space-between;
+
     align-items: center;
     border-bottom: 1px solid #33363e;
 
@@ -203,6 +210,25 @@ body {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #33363e;
+    .livescore {
+      position: absolute;
+      align-items: center;
+      justify-content: space-around;
+      left: -150px;
+      width: 140px;
+      height: 36px;
+      right: 300px;
+      border: 1px solid #33363e;
+      padding-right: 10px;
+      display: none;
+      span {
+        width: 5px;
+        height: 5px;
+        background-color: $bolder;
+        margin-left: 1px;
+        color: rgb(36, 33, 33);
+      }
+    }
     .dateResolved {
       display: flex;
       width: 180px;
@@ -214,6 +240,7 @@ body {
       p {
         color: #fff;
         font-size: 14px;
+        width: 100px;
       }
       i {
         color: $bolder;
@@ -228,6 +255,7 @@ body {
       display: flex;
       justify-content: space-around;
       align-items: center;
+      position: relative;
       p {
         color: #fff;
         font-size: 14px;
@@ -275,12 +303,12 @@ body {
 
       .first_icon_and-text {
         display: flex;
-        width: 130px;
+        width: 90px;
         justify-content: space-between;
 
         :last-child {
           position: absolute;
-          left: 80px;
+          left: 60px;
         }
       }
       i {
@@ -455,8 +483,8 @@ body {
   transform: translateY(-50%);
 }
 
-.missing-item {
-  width: 243px !important;
+.hide {
+  visibility: hidden;
 }
 
 // right section of betting and football teams
@@ -555,44 +583,4 @@ body {
       transform: translateX(-50%);
     }
   } // right side content end
-}
-@media only screen and (max-width: 1600px) {
-  .betting_content {
-    .first-items {
-    }
-  }
-
-  .betting_middle-items {
-    right: 200px !important;
-  }
-  .winner {
-    position: relative;
-    right: 30px;
-  }
-}
-
-@media only screen and (max-width: 1366px) {
-  .main_sections-second {
-    display: none;
-  }
-  .main_sections {
-    .first-section {
-      padding-right: 130px;
-    }
-  }
-  .id_top_label {
-    margin-top: 20px;
-  }
-  .tickedId {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 1366px) {
-  .main_sections {
-    .first-section {
-      padding-right: 10px;
-      padding-left: 10px;
-    }
-  }
 }
