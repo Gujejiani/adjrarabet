@@ -470,7 +470,6 @@ body {
 }
 .main_sections-second .content .soccer {
   display: flex;
-  width: 90px;
   height: 35px;
   width: 100%;
   border-bottom: 1px solid #33363e;
@@ -533,7 +532,7 @@ body {
 .main_sections-second .content .firstTeamName {
   position: absolute;
   left: 50%;
-  left: -70px;
+  left: -65px;
   transform: translateX(-50%);
   text-align: right;
 }
