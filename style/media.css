@@ -1,14 +1,20 @@
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1620px) {
   .main_sections .betting_middle-items {
     right: 200px;
   }
-  .winner {
-    position: relative;
-    right: 30px;
+  #betting_first-items {
+    width: 300px;
+  }
+  .main_sections .winner {
+    margin-left: 100px;
+  }
+  .main_sections-second .content {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1375px) {
   .main_sections-second {
     display: none;
   }
@@ -31,9 +37,7 @@
   .main_sections .first-section {
     padding-left: 10px;
   }
-  #betting_first-items {
-    width: 300px;
-  }
+
   .header .input {
     width: 10px;
   }
@@ -68,10 +72,46 @@
   }
 }
 @media only screen and (max-width: 768px) {
+  .hidden {
+    display: none;
+  }
+  .main_sections-navItems ul {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 713px) {
+  .header ul {
+    font-size: 13px;
+    width: 300px;
+  }
+  .main_sections .betting_middle-items {
+    display: none;
+  }
   .main_sections .date .livescore {
     display: none;
   }
-  .winner {
-    right: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .mob_hide {
+    display: none;
+  }
+  .header ul {
+    width: 70px;
+  }
+
+  .main_sections-navItems ul {
+    width: 135px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main_sections .date .calendar {
+    display: none;
+  }
+  .main_sections .betting_content .betting_secondItems {
+    display: none;
+  }
+  #betting_first-items {
+    width: 220px;
   }
 }

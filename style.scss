@@ -126,9 +126,11 @@ body {
   display: flex;
 
   .first-section {
-    background-color: #2a2c32;
+    background-color: #232529;
     //  max-width: 1300px;
-
+    :hover {
+      background-color: #33363e;
+    }
     //height: 2000px;
     flex: 2;
     padding-left: 130px;
@@ -136,7 +138,7 @@ body {
     padding-bottom: 100px;
     box-shadow: 15px 0 5px -5px#1b1b1d;
     z-index: 2;
-    position: relative;
+    position: relatived;
   }
   &-navItems {
     width: 100%;
@@ -170,7 +172,7 @@ body {
         height: 2px;
         display: block;
         background-color: red;
-        top: 44px;
+        top: 43px;
         left: -24px;
       }
     }
@@ -276,6 +278,7 @@ body {
     display: flex;
     position: relative;
     border-bottom: 1px solid #33363e;
+    width: 100%;
 
     label {
       font-size: 10px;
@@ -365,7 +368,7 @@ body {
     width: 200px;
     justify-content: space-between;
     position: absolute;
-    right: 300px;
+    right: 250px;
     .last-child {
       display: flex;
       margin-top: 8px;
@@ -434,12 +437,12 @@ body {
     }
   }
   .winner {
+    position: absolute;
     display: flex;
     flex-direction: column;
     width: 100px;
-    margin-bottom: 10px;
     justify-content: center;
-    margin-left: 50px;
+    margin-left: 120px;
     p {
       label {
         vertical-align: top;
@@ -487,12 +490,15 @@ body {
 .main_sections-second {
   background-color: #272727;
   flex: 1;
+
   .content {
     font-size: 18px;
     color: #fff;
     padding-left: 60px;
     padding-right: 100px;
-
+    :hover {
+      background-color: #33363e;
+    }
     .title {
       display: flex;
       height: 90px;
